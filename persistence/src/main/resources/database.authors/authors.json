@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "jan",
+    "surname": "kowal",
+    "placeOfBirth": "nowawieś",
+    "removed": false
+  },
+  {
+    "id": 2,
+    "name": "jan",
+    "surname": "kowal",
+    "placeOfBirth": "nowawieś",
+    "removed": true
+  },
+  {
+    "id": 3,
+    "name": "jan",
+    "surname": "kowal",
+    "placeOfBirth": "nowawieś",
+    "removed": false
+  },
+  {
+    "id": 4,
+    "name": "jan",
+    "surname": "kowal",
+    "placeOfBirth": "nowawieś",
+    "removed": false
+  }
+]
