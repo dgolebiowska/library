@@ -1,11 +1,11 @@
 package pl.sda.domain;
 
 public class Author {
-    Long id;
-    String name;
-    String surname;
-    String placeOfBirth;
-    boolean removed;
+    private Long id;
+    private String name;
+    private String surname;
+    private String placeOfBirth;
+    private boolean removed;
 
     public boolean isRemoved() {
         return removed;
@@ -45,5 +45,16 @@ public class Author {
 
     public void setPlaceOfBirth(String placeOfBirth) {
         this.placeOfBirth = placeOfBirth;
+    }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", placeOfBirth='" + placeOfBirth + '\'' +
+                ", removed=" + removed +
+                '}';
     }
 }

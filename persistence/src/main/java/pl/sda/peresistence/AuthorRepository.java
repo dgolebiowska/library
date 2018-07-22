@@ -36,5 +36,41 @@ public class AuthorRepository implements IAuthorRepository {
         OBJECT_MAPPER.writeValue(new File(AUTHOR_DB_PATH), authors);
 
     }
+
+    @Override
+    public Author read(Long id) throws IOException {
+        List<Author> authors = OBJECT_MAPPER.readValue(new File("C:\\Users\\Dorota\\sda\\nowerepo\\super-mega-library\\persistence\\src\\main\\resources\\database.authors\\authors.json"), new TypeReference<List<Author>>() {
+        });
+        for (Author a : authors) {
+            if (id.equals(a.getId())) {
+                System.out.println(a);
+                return a;
+            }
+        }
+        return null;
+    }
+    @Override
+    public List viewAll() throws IOException {
+        List<Author> authors = OBJECT_MAPPER.readValue(new File("C:\\Users\\Dorota\\sda\\nowerepo\\super-mega-library\\persistence\\src\\main\\resources\\database.authors\\authors.json"), new TypeReference<List<Author>>() {
+        });
+        return authors;
+    }
+
+    @Override
+    public void update(Author author) throws IOException {
+        List<Author> authors = OBJECT_MAPPER.readValue(new File("C:\\Users\\Dorota\\sda\\nowerepo\\super-mega-library\\persistence\\src\\main\\resources\\database.authors\\authors.json"), new TypeReference<List<Author>>() {
+        });
+
+        int index = 0;
+        for(int i = 0; i< authors.size(); i++) {
+            if(author.getId().equals(authors.get(i).getId())){
+                index = i;
+                break;
+            }
+        }
+        authors.set(index, author);
+        OBJECT_MAPPER.writeValue(new File(AUTHOR_DB_PATH), authors);
+    }
+
 }
 
