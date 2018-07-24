@@ -1,6 +1,7 @@
 package pl.sda.view.Controller.controller;
 
 import pl.sda.domain.Author;
+import pl.sda.domain.Book;
 import pl.sda.service.AuthorService;
 
 import java.io.IOException;
@@ -28,6 +29,11 @@ public class LibraryLauncher {
         String surname = scanner.nextLine();
         author.setSurname(surname.equals("")? author.getSurname():surname);
         authorController.update(author);
+
+
+        BookController bookController=new BookController();
+
+        }
     }
 
-}
+

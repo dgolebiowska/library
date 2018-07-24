@@ -7,6 +7,15 @@ public class Borrower {
     String address;
     int phoneNumber;
     String email;
+    boolean removed;
+
+    public boolean isRemoved() {
+        return removed;
+    }
+
+    public void setRemoved(boolean removed) {
+        this.removed = removed;
+    }
 
     public int getId() {
         return id;

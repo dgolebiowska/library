@@ -7,6 +7,15 @@ public class Borrow {
     LocalDate dateOfBorrow;
     Long bookID;
     Long borrowerID;
+    boolean revmoved;
+
+    public boolean isRevmoved() {
+        return revmoved;
+    }
+
+    public void setRevmoved(boolean revmoved) {
+        this.revmoved = revmoved;
+    }
 
     public int getId() {
         return id;
