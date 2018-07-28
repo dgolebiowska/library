@@ -13,8 +13,8 @@ import java.time.LocalDate;
 public class Book {
    private Long id;
    private String title;
-    private LocalDate dateOfPublish;
-  private   int ISBN;
+    private String dateOfPublish;
+  private   long ISBN;
     private BooksType type;
     private int numerOfPage;
    private String description;

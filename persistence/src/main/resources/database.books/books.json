@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "\"W pustyni i w puszczy\"",
+    "dateOfPublish": "1993",
+    "type": "HORROR",
+    "numerOfPage": 50,
+    "description": "blablabal",
+    "authorId": 11,
+    "removed": true,
+    "isbn": 444444
+  },
+  {
+    "id": 2,
+    "title": "hehehe",
+    "dateOfPublish": "1993",
+    "type": "HORROR",
+    "numerOfPage": 55,
+    "description": "fjfjfjfjffjjf",
+    "authorId": 11,
+    "removed": false,
+    "isbn": 4444
+  },
+  {
+    "id": 3,
+    "title": "fffff",
+    "dateOfPublish": "ffff",
+    "type": "HORROR",
+    "numerOfPage": 55,
+    "description": "gggg",
+    "authorId": 9,
+    "removed": false,
+    "isbn": 444
+  }
+]

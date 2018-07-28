@@ -9,12 +9,8 @@ import java.util.List;
 
 public class AuthorController {
     private IAuthorService authorService=new AuthorService();
-    public void create(String firstName, String lastname,String placeOfBirth) throws IOException {
-        Author author=new Author();
-        author.setName(firstName);
-        author.setSurname(lastname);
-        author.setPlaceOfBirth(placeOfBirth);
-        authorService.create(author);
+    public void create() throws IOException {
+
     }
     public void delete(Long id) throws IOException {
 authorService.delete(id);
