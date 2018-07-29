@@ -1,4 +1,4 @@
-package pl.sda.view.Controller.controller;
+package pl.sda.view.Controller.controller.entry;
 
 import pl.sda.domain.Author;
 import pl.sda.service.AuthorService;

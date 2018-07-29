@@ -1,4 +1,4 @@
-package pl.sda.view.Controller.controller;
+package pl.sda.view.Controller.controller.entry;
 
 import pl.sda.domain.Borrow;
 import pl.sda.domain.Borrower;
@@ -10,13 +10,7 @@ import java.util.List;
 
 public class BorrowerCotroller {
     private IBorrowerService borrowerService=new BorrowerService();
-    public void create( String name, String surname, String address, int phoneNumber, String email) throws IOException {
-        Borrower borrower=new Borrower();
-        borrower.setName(name);
-        borrower.setSurname(surname);
-        borrower.setAddress(address);
-        borrower.setPhoneNumber(phoneNumber);
-        borrower.setEmail(email);
+    public void create(Borrower borrower ) throws IOException {
         borrowerService.create(borrower);
     }
     public void delete(Long id) throws IOException {

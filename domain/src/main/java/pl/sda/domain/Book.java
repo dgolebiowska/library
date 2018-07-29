@@ -20,5 +20,6 @@ public class Book {
    private String description;
    private Long authorId;
     boolean removed;
+    boolean borrowed;
 
 }

@@ -28,6 +28,7 @@ private static final String BOOK_DB_PATH="C:\\Users\\Dorota\\sda\\nowerepo\\supe
             if (id.equals(b.getId())) {
                 b.setRemoved(true);
             }
+
         }
 
         OBJECT_MAPPER.writeValue(new File(BOOK_DB_PATH), books);
